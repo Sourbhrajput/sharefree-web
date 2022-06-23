@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/show.css">
+    <title>shareNow download</title>
+
+</head>
+<body>
+    <div class="container">
+      <a href="/">
+      <img   class="logo" src="/img/Share Proton.png" alt=""> 
+    </a>
+  <div class="inner_container">
+    <a class="github_repo" href="https://github.com/Sourbhrajput" target="_blank"><img class="github" src="/img/github_PNG85.png"  draggable="false" alt="">Github Repository</a> 
+ <div class="content">
+   
+   <h1 class="txt-download"> Your file is ready to download</h1>
+ <img class="download_img" src="/img/pngwing.com.png" draggable="false" alt="">
+<h3><%=filedata.filename %></h3>
+<h5>Size: <%=filedata.size%>kb</h5><br>
+<div class="dwn">
+<a href=" <%= filedata.download_url%>" class="download_btn ">Download</a> <span class="or">or</span>
+<a href="<%=filedata.view_url%>" class="download_btn view">View</a>
+</div>
+  <h3>Link expire in 24Hr</h3>
+</div>
+
+     </div>
+    </div>
+</body>
+</html>

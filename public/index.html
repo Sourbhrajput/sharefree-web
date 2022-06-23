@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>File Sharing web</title>
+  </head>
+  <body>
+    
+    <div class="root">
+      
+      <div class="container">
+       <a class="github_repo" href="https://github.com/Sourbhrajput" target="_blank"><img class="github" src="./img/github_PNG85.png"  draggable="false" alt="">Github Repository</a> 
+        <div class="drop-container">
+          <img
+            class="center"
+            src="../img/document-g487b28ed9_1280.png"
+            draggable="false"
+            alt=""
+          />
+          <img
+            class="left"
+            src="./img/document-g487b28ed9_reverse.png"
+            draggable="false"
+            alt=""
+          />
+          <img
+            class="right"
+            src="../img/document-g487b28ed9_1280.png"
+            draggable="false"
+            alt=""
+          />
+          <h1 class="text">
+            Drop or Click here to , <span class="browse">Browse</span>
+          </h1>
+          <input type="file" class="fileInput" />
+        </div>
+
+        <div class="upload_meter display_meter">
+          <div class="meter_div">
+            <div class="meter"></div>
+            <div class="meter_text">
+              <span class="uploading_text">Uploading...</span><br />
+              <span class="line_percentage">0%</span>
+              <div class="small_meter"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="url_div display_meter">
+          <div class="text_exp">
+            <h4>Link expire in 24Hr</h4>
+          </div>
+          <div class="download_url">
+            <input
+              type="text"
+              value=""
+              class="show_url"
+              readonly
+            />
+            <div class="copy">
+              <i class="fa-solid fa-clipboard copy-icon"></i>
+            </div>
+          </div>
+          <div class="mail-div">
+              <h4>or send by mail</h4>
+            <form class="send_mail" >
+                 <div class="from">
+                     <input type="email" name="from" required placeholder="From" >
+                 </div>
+
+                 <div class="to">
+                     <input type="email" name="to" id="" required placeholder="to">
+                 </div>
+            
+                 <button  type="submit">Send</button>
+           </form>
+        </div>
+        </div>
+      </div>
+    
+      <div class="copied notification">
+        Copyed
+    </div>
+    
+     <div class="send notification">
+        Send Successfully
+    </div>
+    
+   </div>
+    <script src="../src/script.js"></script>
+  </body>
+</html>
