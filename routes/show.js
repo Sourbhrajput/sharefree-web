@@ -1,7 +1,8 @@
 const route = require("express").Router();
 require('dotenv').config();
 const collection =require('../Schema/schema');
-
+const deletefile=require('../deletefiles');  
+deletefile();
 route.get('/:uuid', async(req,resp)=>
 {
  const uuid=req.params.uuid;
